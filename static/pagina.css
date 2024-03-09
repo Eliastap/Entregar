@@ -1,0 +1,92 @@
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.cerrar-sesion{
+    background-color: yellow;
+    color: black;
+}
+
+.letrasdown {
+    font-size: 60px; /* Tamaño de las letras grandes */
+    color: yellow; /* Color amarillo transparente */
+    text-align: center; /* Centrar el texto */
+}
+
+.letrasdown {
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline; /* Para que el fondo se aplique solo alrededor del texto */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de la sección de información */
+.info {
+    color: white;
+    text-align: center;
+    width: 40%;
+    padding-top: 70%;
+    padding-left: 30%;
+    padding-bottom: 20%;
+    margin: 20px 0;
+}
+
+
+
+/*---Practica */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.letras{
+    color: white;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+

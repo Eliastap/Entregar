@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Valorant</title>
+    <link rel="stylesheet" href="../static/encuesta.css">
+    <script>
+        function mostrarMensaje() {
+            alert("Tus datos han sido enviados.");
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Encuesta sobre Valorant</h1>
+        </header>
+
+        <div>
+            <img src="../static/Phoenix.jpg" alt="personaje_valorant" class="personaje"/>
+        </div>
+
+        <div class="encuesta-container">
+            <form action="#" onsubmit="mostrarMensaje()">
+                <h2>¿Te gusta jugar Valorant?</h2>
+                <input type="radio" id="si" name="gusta" value="si">
+                <label for="si">Sí</label>
+                <input type="radio" id="no" name="gusta" value="no">
+                <label for="no">No</label>
+                <br>
+
+                <h2>¿Qué personaje de Valorant te gusta más?</h2>
+                <select name="personaje">
+                    <option value="phoenix">Phoenix</option>
+                    <option value="jett">Jett</option>
+                    <option value="omen">Omen</option>
+                    <option value="sage">Sage</option>
+                    <option value="brimstone">Brimstone</option>
+                </select>
+                <br>
+
+                <h2>¿Qué clase de agente es tu favorita?</h2>
+                <input type="radio" id="duelista" name="clase" value="duelista">
+                <label for="duelista">Duelista</label>
+                <input type="radio" id="iniciador" name="clase" value="iniciador">
+                <label for="iniciador">Iniciador</label>
+                <input type="radio" id="controlador" name="clase" value="controlador">
+                <label for="controlador">Controlador</label>
+                <input type="radio" id="centinela" name="clase" value="centinela">
+                <label for="centinela">Centinela</label>
+                <br>
+
+                <h2>¿De dónde es el personaje seleccionado?</h2>
+                <input type="text" name="origen" placeholder="País de origen">
+                <br>
+
+                <h2>¿Qué hace la habilidad definitiva del personaje seleccionado?</h2>
+                <textarea name="ultima" rows="2" cols="25" placeholder="Descripción de la habilidad definitiva"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+                <br>
+                 
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
